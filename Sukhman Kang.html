@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sukhman Kang</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon-initials.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='Styling.css'>
+    <script src='Script.js' defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#Intro">Sukhman Kang</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Intro">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About me">About</a>
+          </li>
+          <li class="nav-item">
+            <button id="btnColourMode" onclick="fnDarkMode()" type="button" class=" rounded-circle btn btn-light px-1 py-1 mt-1 mx-2"><img id="imgMoon" src="Assets/moon-dark.svg" height="30">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="Intro">
+        <div class="container">
+          <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Hello World!<br> I am Sukhman Kang</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">I am a dedicated undergraduate Computer Science student with an enthusiasm for coding and problem-solving. I find joy in saving time and being efficient, for that reason, I find delight in automating as many simple tasks as possible by coding them. Explore my work and let's connect!</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href="#Projects">
+                  <button type="button" class="btn btn-secondary btn-lg px-3 me-sm-3" href="#Projects"><img src="Assets/arrow-down-circle.svg" height="35"></button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" onclick="topFunction()" id="topButton" class="rounded-circle btn btn-info px-2 top-button">
+          <img src="Assets/arrow-up-circle.svg" height="40">
+        </button>
+  </section>
+
+  <section id="Projects">
+      <div class="container text-center">
+        <h1 class="display-5 fw-bold text-body-secondary mb-5">Projects</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6 col-xxl-4 mb-5 d-flex justify-content-center">
+            <div class="card" style="width: 22rem;">
+              <img src="Assets/FlashQuiz logo.gif" class="card-img-top" alt="Home screen of FlashQuiz">
+              <div class="card-body">
+                <h5 class="card-title">FlashQuiz</h5>
+                <p class="card-text">This was my first coding project as part of my A-Level Computer Science examination where I had to solve one of my client's problems. In this case, I created a revision app with flashcards using Python. I designed the user interface, modelled the database, and wrote all the code as efficiently as possible.
+                </p>
+                <a href="https://github.com/Sukhman25K/FlashQuiz" target="_blank" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xxl-4 mb-5 d-flex justify-content-center">
+            <div class="card" style="width: 22rem;">
+              <img src="Assets/Currency Converter logo.png" class="card-img-top" alt="Logo of currency converter with symbols of major currencies">
+              <div class="card-body">
+                <h5 class="card-title">Currency Converter</h5>
+                <p class="card-text">Being a forex trader and global economics admirer, I created a simple Python program with the help of an API (API-Ninjas) to provide real-time exchange rates for a broad range of international currencies. To improve the user interface, I added a plain graphical user interface through Python's built-in library of Tkinter.
+                </p>
+                <a href="https://github.com/Sukhman25K/Currency-Converter" target="_blank" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xxl-4 mb-5 d-flex justify-content-center">
+            <div class="card" style="width: 22rem;">
+              <img src="Assets/Electric Vehicle image.png" class="card-img-top" alt="Image of an electric vehicle charging">
+              <div class="card-body">
+                <h5 class="card-title">USA EV Market Share Analysis</h5>
+                <p class="card-text">As part of my A-level economics course, I was required to research the market share of EV manufacturers in the USA. Since I was unable to find any recent data, I decided to analyse a large dataset obtained from the US Government's Open Database and generate my own figures for the EV market share in the USA. Given the vast size of the dataset, I wrote a Python script to analyse the data and extract relevant statistics.
+                </p>
+                <a href="https://github.com/Sukhman25K/USA-Electric-Vehicle-Population-Analysis" target="_blank" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xxl-4 mb-5 d-flex justify-content-center">
+            <div class="card" style="width: 22rem;">
+              <img src="Assets/Spotify logo.png" class="card-img-top" alt="Spotify's logo">
+              <div class="card-body">
+                <h5 class="card-title">Spotify Data Parser</h5>
+                <p class="card-text">As a music enthusiast, I've always been fascinated by Spotify's end-of-year Wrapped feature. To delve deeper into my music preferences, I developed a Python script that parses JSON files containing my Spotify data, which I obtained directly sourced from Spotify's records. 
+                </p>
+                <a href="https://github.com/Sukhman25K/Spotify-Data-Parser" target="_blank" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom">
+          <a class="btn btn-success btn-lg mb-5" href="https://github.com/Sukhman25K?tab=repositories" target="_blank" role="button">View More Projects</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="About me">
+    <h1 class="text-center fw-bold text-body-secondary pt-5">About Me</h1>
+    <div class="container col-xxl-8 px-4 pb-5">
+      
+      <div class="row flex-lg-row align-items-center g-5 mt-5 pb-0">
+        <div class="col-lg-6">
+          <p class="lead">As a devoted undergraduate Computer Science student at the University of Leicester and an aspiring data analyst, I have a strong passion for problem-solving. With nearly seven years of programming experience, I specialise in Python and hold a certification in the language, along with proficiency in Java and web development. Making use of these skills, I created one of my favourite projects which was the FlashQuiz application, developed for my A-Level computer science examinations. In the project, I created a functional user interface integrated with a structured database, illustrating my ability to combine technical skills with creativity.</p>
+        </div>
+        <div class="col-12 col-lg-6 text-md-center">
+          <img src="Assets/Intro poster.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+
+      <div class="row flex-lg-row align-items-center g-5">
+
+        <div class="col-lg-6 pt-lg-0 mt-lg-0 mt-5 pt-5 ">
+          <p class="lead">In my part-time role as a customer services representative at Domino's Pizza, I have sharpened foundational skills such as communication and teamwork, both of which are crucial in any position. Clear communication is essential for serving customers effectively, while teamwork enhances collaboration among staff. Through assigned roles and responsibilities, I’ve had the opportunity to develop these skills, understanding that the combination of effective communication and teamwork allows a business to operate at peak efficiency.</p>
+        </div>
+
+        <div class="col-lg-6 pt-5">
+          <h2 class="text-center">My Language Stack</h2>
+          <div class="container img-grid">
+            <div class="image-container">
+              <img class="img-fluid" src="Assets/python-logo.png">
+              <h5 class="hover-text">Python</h5>
+            </div>
+            <div class="image-container">
+              <img class="img-fluid" src="Assets/java-logo.png">
+              <h5 class="hover-text">Java</h5>
+            </div>
+            <div class="image-container">
+              <img class="img-fluid" src="Assets/html-logo.png">
+              <h5 class="hover-text">HTML</h5>
+            </div>
+            <div class="image-container">
+              <img class="img-fluid" src="Assets/css-logo.png">
+              <h5 class="hover-text">CSS</h5>
+            </div>
+            <div class="image-container">
+              <img class="img-fluid" src="Assets/javascript-logo.png">
+              <h5 class="hover-text">JavaScript</h5>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#Intro" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#Projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="#About me" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+            <p>© Sukhman Kang</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3 px-4"><a class="link-body-emphasis" href="https://github.com/Sukhman25K" target="_blank"><img id="imgGithub" src="Assets/github-dark.svg" height="40"></a></li>
+              <li class="ms-3 px-4"><a class="link-body-emphasis" href="https://www.linkedin.com/in/sukhman-kang-399b37215/" target="_blank"><img id="imgLinkedin" src="Assets/linkedin-dark.svg" height="40"></a></li>
+              <li class="ms-3 px-4"><a class="link-body-emphasis" href="mailto:sukhman.25k@gmail.com"><img id="imgEmail" src="Assets/envelope-at-dark.svg" height="40"></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
