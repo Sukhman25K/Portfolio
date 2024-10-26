@@ -41,6 +41,7 @@ const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 document.documentElement.setAttribute('data-bs-theme',currentThemeSetting)
+fnDarkMode()
 
 window.onscroll = function(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
